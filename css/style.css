@@ -424,7 +424,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .expert {
   position: relative;
-  z-index: -1;
   background: #fafbfd;
 }
 
@@ -434,7 +433,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .expert__counter-w {
   position: relative;
-  background: #fff;
   max-width: 654px;
   margin: 0 auto 80px;
 }
@@ -451,6 +449,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
           box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
   border-radius: 16px;
+  z-index: 2;
+  background: #fff;
 }
 
 .expert-counter__content {
@@ -497,7 +497,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 30px;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
-  z-index: -1;
 }
 
 .expert-counter__decor--1 {
