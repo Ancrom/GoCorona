@@ -282,7 +282,6 @@
 .healthcare {
 	background: #fafbfd;
 	position: relative;
-	z-index: -1;
 	&__container {
 	}
 	&__body {
@@ -306,15 +305,7 @@
 		grid-template: "A B C";
 		gap: 60px;
 	}
-	&__item {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		flex: 0 1 calc(100% / 3);
-		padding: 37px 25px;
-		background: #fff;
-		box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
-		border-radius: 8px;
+	&__item-wrapper {
 		position: relative;
 		&:nth-child(1) {
 			&::before,
@@ -322,7 +313,6 @@
 				content: "";
 				position: absolute;
 				background: #ec5863;
-				z-index: -1;
 			}
 			&::before {
 				width: 66px;
@@ -346,7 +336,6 @@
 			&::after {
 				content: "";
 				position: absolute;
-				z-index: -1;
 				width: 127px;
 				height: 127px;
 				right: -78px;
@@ -360,7 +349,6 @@
 			&::after {
 				content: "";
 				position: absolute;
-				z-index: -1;
 				width: 66px;
 				height: 66px;
 				right: -20px;
@@ -370,6 +358,17 @@
 				transform: rotate(-30deg);
 			}
 		}
+	}
+	&__item {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		padding: 37px 25px;
+		background: rgb(255, 255, 255);
+		box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+		border-radius: 8px;
+		position: relative;
+		z-index: 2;
 	}
 	&__icon {
 		&:not(:last-child) {
