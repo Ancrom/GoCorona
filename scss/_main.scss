@@ -180,13 +180,13 @@
 	&__container {
 	}
 	&__body {
-		padding: 53px 0 116px;
+		padding: 103px 0 116px;
 	}
 	&__counter-w {
-		padding: 53px 0;
-		&:not(:last-child) {
-			margin: 0 0 53px 0;
-		}
+		position: relative;
+		background: #fff;
+		max-width: 654px;
+		margin: 0 auto 80px;
 	}
 	&__counter {
 	}
@@ -196,13 +196,10 @@
 .expert-counter {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 	padding: 28px 80px;
-	background: #fff;
-	max-width: 654px;
-	margin: 0 auto;
 	box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
 	border-radius: 16px;
-	position: relative;
 	&__content {
 		display: flex;
 		flex-flow: column;
@@ -235,8 +232,8 @@
 		&--1 {
 			width: 127px;
 			height: 127px;
-			bottom: -13px;
-			right: -52px;
+			top: 0;
+			right: -53px;
 		}
 		&--2 {
 			width: 66px;
@@ -248,8 +245,8 @@
 		&--3 {
 			width: 97px;
 			height: 97px;
-			top: -40px;
-			left: 220px;
+			top: -41px;
+			right: calc(50% + 10px);
 			border-radius: 30px;
 			transform: rotate(105deg);
 		}

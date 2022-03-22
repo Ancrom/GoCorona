@@ -429,15 +429,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .expert__body {
-  padding: 53px 0 116px;
+  padding: 103px 0 116px;
 }
 
 .expert__counter-w {
-  padding: 53px 0;
-}
-
-.expert__counter-w:not(:last-child) {
-  margin: 0 0 53px 0;
+  position: relative;
+  background: #fff;
+  max-width: 654px;
+  margin: 0 auto 80px;
 }
 
 .expert-counter {
@@ -447,14 +446,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   padding: 28px 80px;
-  background: #fff;
-  max-width: 654px;
-  margin: 0 auto;
   -webkit-box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
           box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
   border-radius: 16px;
-  position: relative;
 }
 
 .expert-counter__content {
@@ -507,8 +503,8 @@ h1, h2, h3, h4, h5, h6 {
 .expert-counter__decor--1 {
   width: 127px;
   height: 127px;
-  bottom: -13px;
-  right: -52px;
+  top: 0;
+  right: -53px;
 }
 
 .expert-counter__decor--2 {
@@ -522,8 +518,8 @@ h1, h2, h3, h4, h5, h6 {
 .expert-counter__decor--3 {
   width: 97px;
   height: 97px;
-  top: -40px;
-  left: 220px;
+  top: -41px;
+  right: calc(50% + 10px);
   border-radius: 30px;
   -webkit-transform: rotate(105deg);
           transform: rotate(105deg);
