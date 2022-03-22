@@ -1,0 +1,14 @@
+.footer {
+	&__container {
+	}
+	&__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__link {
+		&:not(:last-child) {
+			margin: 0 56px 0 0;
+		}
+	}
+}
